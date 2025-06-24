@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+  <h2>Dashboard</h2>
+  <button onclick="logout()">Cerrar sesión</button>
+
+  <h3>Nuevo producto</h3>
+  <input id="name" placeholder="Nombre producto" />
+  <input id="price" placeholder="Precio" type="number" />
+  <input id="stock" placeholder="Stock" type="number" />
+  <button onclick="addProduct()">Agregar</button>
+
+  <h3>Lista de productos</h3>
+  <ul id="product-list"></ul>
+
+  <!-- Firebase SDK v8 -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+  <!-- Tu lógica -->
+  <script src="app.js"></script>
+</body>
+</html>
